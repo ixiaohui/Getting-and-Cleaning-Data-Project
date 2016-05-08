@@ -30,12 +30,14 @@ More detailed information about the raw data could be found at [the link](http:/
 ### Tidy Data Variables
 The `tidy.txt` contains the data of the average of each mean and standard deviation measurement variable for each activity and each subject. The dimension of the tidy data is 180*68.
 
-The id variables are:  
+#### The id variables  
 
 * subject: The ID of the subject who participates in the test
 * activity: There are six type of activities which are "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING" and "LAYING"
 
-The mean and standard deviation measurement variables are:
+#### The mean and standard deviation measurement variables
+The variable names which contains "Mean" implies that it is mean value of corresponding measurement.
+The variable names which contains "Std" implies that it is the Standard deviation of the corresponding measurement.
 
 * tBodyAccMeanX
 * tBodyAccMeanY
@@ -104,6 +106,6 @@ The mean and standard deviation measurement variables are:
 * fBodyBodyGyroJerkMagMean
 * fBodyBodyGyroJerkMagStd 
 
-The variable names which contains "Mean" implies that it is mean value of corresponding measurement.
-The variable names which contains "Std" implies that it is the Standard deviation of the corresponding measurement.
-The unit for all the measurement variables is Hz.
+#### Units
+* The unit for the acceleration measurement variables is 'g'. In another word, the variable names which contains "Acc" is with the unit 'g'.
+* The unit for the angular velocity measurement variables is 'radians/second'. In another word, the variable names which contains "Gyro" is with the unit 'radians/second'.
